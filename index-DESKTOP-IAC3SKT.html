@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Predictor</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Weather Predictor</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Weather Container -->
+    <div class="weather-container">
+        <div class="weather-card">
+            <h1>Get Weather</h1>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="getWeatherBtn">Get Weather</button>
+           <div class="weather-info">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="windDirection"></p>
+                <p id="earthquakeChance"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Content -->
+    <section id="home">
+        <h1>Welcome to Weather Predictor</h1>
+        <p>Get accurate weather forecasts for your location!</p>
+    </section>
+
+    
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide accurate and real-time weather data sourced from trusted providers.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to contact us!</p>
+        <form>
+            Name: <input type="text" placeholder="Your Name">
+            Email: <input type="email" placeholder="Your Email">
+            City: <input type="text" placeholder="Your City">
+            Message:<br>
+            <textarea placeholder="Your Message"rows="4" cols="40"></textarea>
+            <button type="submit">Send</button>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
