@@ -1,0 +1,223 @@
+/* Universal reset for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* Light blue-grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #4a90e2; /* Sky blue color for navbar */
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Golden yellow hover color */
+}
+
+/* Weather Container */
+.weather-container {
+    background: linear-gradient(145deg, #ffffff, #d6e1e8); /* Gradient effect for container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 100px; /* So that navbar doesn't overlap */
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.weather-container:hover {
+    transform: translateY(-10px); /* Slight hover animation */
+}
+
+.weather-card h1 {
+    font-size: 30px;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4a90e2; /* Change border color when input is focused */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f5a623;
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+.weather-info p {
+    font-size: 16px;
+    color: #777;
+}
+
+#cityName {
+    font-weight: bold;
+    font-size: 22px;
+    color: #4a90e2;
+}
+
+/* Error Message */
+#errorMessage {
+    color: #d9534f; /* Red color for error */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Section Content */
+section {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 40px;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+section h1,
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Home section specific styles */
+#home {
+    background: linear-gradient(45deg, #ffb6c1, #ffcc00);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+#home h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Forecast Section */
+#forecast {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* About Section */
+#about {
+    background-color: #f2f2f2;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e8e8e8;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .weather-container {
+        width: 90%;
+        margin-top: 120px; /* Adjust margin for mobile view */
+    }
+
+    section {
+        padding: 20px;
+    }
+}
